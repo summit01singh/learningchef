@@ -8,7 +8,6 @@ describe service('nginx') do
   it { should be_enabled }
 end
 
-
 describe command('curl localhost') do
   its('stdout') { should match('docker') }
 end
